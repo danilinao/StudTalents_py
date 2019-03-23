@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dimplom</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/mdb.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Social-Icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}">
+    <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/highlight.min.js') }}"></script>
+</head>
+
+<body class="vertical-center">
+    <div class="container" id="main-container">
+        <div class="row" style="margin-bottom: 5%;">
+            <div class="col text-center">
+                <img src="{{ url_for('static', filename='assets/img/logo.png') }}" style="max-width: 20%;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-sm-flex justify-content-sm-center align-items-sm-center">
+                <form class="border rounded shadow-lg" action="login-form.html" method="get" style="padding: 3%;padding-bottom: 1%;">
+                    <div class="form-group"><label style="font-weight: bold;color: rgb(107,104,105);">Фамилия</label><input class="form-control" type="text" name="second_name" required="" placeholder="Иванов"></div>
+                    <div class="form-group"><label style="font-weight: bold;color: rgb(107,104,105);">Имя</label><input class="form-control" type="text" name="first_name" required="" placeholder="Иван"></div>
+                    <div class="form-group"><label style="font-weight: bold;color: rgb(107,104,105);">Отчество (при наличии)</label><input class="form-control" type="text" name="middle_name" placeholder="Иванович"></div>
+                    <div class="form-group"><label style="font-weight: bold;color: rgb(107,104,105);">E-mail</label><input class="form-control" type="email" name="email" required="" placeholder="i.ivanon@host.ru" inputmode="email"></div>
+                    <div class="form-group"><label style="font-weight: bold;color: rgb(107,104,105);">Дата рождения</label><input class="form-control" type="date" name="birthday" required=""></div>
+                    <div class="form-group"><label style="font-weight: bold;color: rgb(107,104,105);">Учебное заведение (текущее)</label><input class="form-control" type="text" name="institution" required="" placeholder="Гимназия №18"></div>
+                    <div class="form-group"><label style="font-weight: bold;color: rgb(107,104,105);margin-right: 5px;max-width: 90%;">Я собираюсь поступать в МГТУ "СТАНКИН"</label><input class="float-right" type="checkbox" name="go_to_stankin" style="width: 1.5rem;height: 1.5rem;margin-right: 5%;"></div>
+                    <div
+                        class="form-group"><label style="font-weight: bold;color: rgb(107,104,105);margin-right: 5px;max-width: 71.6%;">Я согласен на подачу и обработку персональных данных</label><input class="float-right" type="checkbox" name="personal_information" required=""
+                            style="width: 1.5rem;height: 1.5rem;margin-right: 5%;"></div>
+            <div class="form-group text-center"><a href="#">Согласие на обработку персональных данных</a></div>
+            <div class="form-group d-xl-flex justify-content-xl-center align-items-xl-center" style="margin-top: 6%;"><button class="btn btn-light border rounded shadow-sm btn-block" type="submit">Подать заявку на регистрацию</button></div>
+            <div class="form-group text-right"><a href=/signin>Перейти к авторизации</a></div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
